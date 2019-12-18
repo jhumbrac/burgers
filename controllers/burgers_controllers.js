@@ -3,7 +3,8 @@ const router = express.Router();
 const burger = require('../models/burger'); // create index.js inside models and require everything
 
 router.get('/', (req, res)=>{
-    burger.selectAll(data=>{ // might have to be req.data
+    let data = req.data;
+    burger.selectAll(data =>{ // might have to be req.data
         let handleBarsObj = {
             burgers: data
         };
