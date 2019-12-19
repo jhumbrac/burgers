@@ -49,7 +49,6 @@ button {
 }
 button[type=submit] {
     font-size: 1em;
-    float: initial;
     margin-top: .25em;
 }
 li {
@@ -69,6 +68,7 @@ input {
     border: none;
     border-bottom: .25em solid #c06c84;
     padding-left:.1em;
+    text-transform:uppercase;
 }
 input:focus {
     outline:none;
