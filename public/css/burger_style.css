@@ -54,6 +54,7 @@ button[type=submit] {
 li {
     font-size: 10vw;
     font-weight: 700;
+    text-transform: capitalize;
 }
 h2 {
     color: #C06C84;
