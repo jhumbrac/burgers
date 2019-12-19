@@ -64,9 +64,14 @@ form {
     font-size: 5vw;
 }
 input {
+    color:rgba(0,0,0,.5);
     font: inherit;
     border: none;
     border-bottom: .25em solid #c06c84;
+    padding-left:.1em;
+}
+input:focus {
+    outline:none;
 }
 .clearfix:after {
     content:"";
