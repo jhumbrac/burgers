@@ -1,30 +1,37 @@
 {{!-- user input into database --}}
-
-<h1>Burgers, Burgers, BURGERS!</h1>
-
-<h2>Burgers I need to eat</h2>
-<ul>
-    {{#each burgers}}
-        {{#unless devoured}}
-            {{> burgers/burger-block devoured=true}}
-        {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Burgers I've eaten</h2>
-<ul>
-    {{#each burgers}}
-        {{#if devoured}}
-            {{> burgers/burger-block devoured=false}}
-        {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a burger</h2>
-<form class="create-form">
-    <div class="form-group">
-        <input type="text" id="burgerName" name="name">
-        <label for="burgerName">Burger Name:</label>
-    </div>
-    <button type="submit">Add Burger</button>
-</form>
+<div class="wrapper">
+    <header class="clearfix">
+        <h1>Burgers,<br>Burgers,<br>BURGERS!</h1>
+        <img src="/img/kumasburger.jpeg" alt="Kuma's burger - best burger in the world">
+    </header>
+    <section class="need-to-eat">
+        <h2>Burgers I need to eat</h2>
+        <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </section>
+    <section class="eaten">
+        <h2>Burgers I've eaten</h2>
+        <ul>
+            {{#each burgers}}
+                {{#if devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                {{/if}}
+            {{/each}}
+        </ul>
+    </section>
+    <section class="form">
+        <h2>Add a burger</h2>
+        <form class="create-form">
+            <div class="form-group">
+                <input type="text" id="burgerName" name="name">
+                <label for="burgerName">Burger Name:</label>
+            </div>
+            <button type="submit">Add Burger</button>
+        </form>
+    </section>
+</div>
