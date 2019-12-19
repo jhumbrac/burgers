@@ -14,18 +14,14 @@ header {
 	height: 60em;
 	overflow: hidden;
 }
-.headerImg {
+header img {
 	position: relative;
 	float: right;
 	width: 66.66%;
-	background: #f67280;
 	z-index: 0;
 	transform: translateY(-25%);
-}
-.headerImg img {
-    width: 100%;
-    display: block;
-    opacity: .5;
+	opacity:.5
+
 }
 section {
 	padding:8em;
