@@ -1,3 +1,4 @@
+const compression = require('compression');
 const express = require('express');
 const router = express.Router();
 const burger = require('../models/burger'); // create index.js inside models and require everything
